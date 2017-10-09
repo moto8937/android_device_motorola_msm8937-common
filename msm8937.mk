@@ -14,6 +14,7 @@
 # limitations under the License.
 
 # Inherit from qcom318-32
+TARGET_BOARD_PLATFORM := msm8937
 $(call inherit-product, device/motorola/qcom318-32/qcom318-32.mk)
 
 # Ramdisk
