@@ -17,6 +17,12 @@
 TARGET_BOARD_PLATFORM := msm8937
 $(call inherit-product, device/motorola/qcom318-32/qcom318-32.mk)
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.platform.rc
